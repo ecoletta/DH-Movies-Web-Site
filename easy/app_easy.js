@@ -208,10 +208,10 @@ http.createServer((req, res) => {
 			break;
 		// En cartelera
 		case '/en-cartelera':
-			res.end('En cartelera');
+			res.end(enCartelera);
 			break;
 		case '/mas-votadas':
-			res.end('Más Votadas');
+			res.end(masVotadas);
 			break;
 		case '/sucursales':
 			res.end('Sucursales');
@@ -238,3 +238,16 @@ moviesName.forEach(function(titulo){
 	home += titulo + "\n"
 });
 home += "\n" + pieDePagina;
+
+// Codigo para /en-cartelera
+let enCartelera = "En cartelera\n\n";
+enCartelera += "Total de peliculas: " + movies.length
+enCartelera += "\n\nListado de peliculas: \n\n"
+
+movies.forEach(function(titulo){
+	enCartelera += titulo.original_title + "\n"
+	enCartelera += titulo.overview + "\n\n"
+});
+
+// Codigo para /mas-votadas
+let masVotadas = "Mas votadas \n\n"

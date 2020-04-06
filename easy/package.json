@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/ecoletta/DH-Movies-Web-Site/issues"
   },
-  "homepage": "https://github.com/ecoletta/DH-Movies-Web-Site#readme"
+  "homepage": "https://github.com/ecoletta/DH-Movies-Web-Site#readme",
+  "dependencies": {}
 }
